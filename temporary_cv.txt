@@ -1,0 +1,46 @@
+[Name] [Last Name]
+Full-Stack Developer for Data Platforms
+
+📧 email@example.com · +00 000 000 0000 · [City, Country] · linkedin.com/in/you · github.com/your-handle
+
+\----------------
+
+[Profile Section]
+Full-stack developer specialized in AI and data platforms... [truncated for brevity]
+
+[Impact Highlights]
+- Data Ingestion Automation: Eliminated manual onboarding/maintenance → self-service model with event-triggered workflows
+- Operational Efficiency: Reduced onboarding time by 95% (48hr → 2hr) through PPV-informed automation
+- Cross-functional Delivery: Partnered with ML team for backend integration and worked with domain experts on PPV implementation
+- Technical Leadership: Secured CTO approval for architecture, coordinated implementation with stakeholders
+
+[Experience]
+**COMPANY #1** (AI-driven procurement & spend-intelligence)
+Mar 2023–Sep 2024
+- Built full-stack features across Django/Celery backend and React/TypeScript dashboard on GCP
+- Developed data ingestion pipeline (cat-ingestion, cat-data, cat-material) powering KPIs for enterprise customers
+- Integrated Vertex AI pipelines: zero-shot part classification, BERT-based grouping, GPT-assisted tagging
+- Collaborated with ML team for backend integration; worked with domain experts on PPV implementation
+
+**COMPANY #2** (AI-powered marketing-intelligence)
+Aug 2022–Jan 2023
+- Built dash-cass, FastAPI configuration service as single source of truth for account/pipeline configs
+- Implemented JWT auth (python-jose), PostgreSQL (SQLAlchemy), Docker containers, Jenkins CI pipelines
+
+**CAREER BREAK**
+Oct 2024–Jul 2026
+Planned break for health/family care. Maintained engineering skills (full-stack, GCP/Vertex AI, AI coding agents). Fully recovered and available.
+
+[Skills]
+Languages: Python, TypeScript, SQL (PostgreSQL, MySQL, BigQuery), Go, Java
+Frontend: React 17, MUI, d3, ECharts, Tailwind, Firebase, Auth0
+Backend: Django, FastAPI, Celery, SQLAlchemy, REST
+Data & AI: Ingestion/ETL, Vertex AI pipelines, HuggingFace/BERT, GPT, Streamlit
+Cloud: GCP (Cloud Run, BigQuery, Pub/Sub), Terraform, Docker, Jenkins
+Tools: Figma, AI coding agents, pytest, Cypress
+
+[Languages]
+Italian — Native │ English │ C1 │ Dutch │ A2
+
+[Interests]
+AI & machine learning, software and game development, Formula 1, photography, cooking, gaming, PC/tech gadgets.
