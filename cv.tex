@@ -1,0 +1,160 @@
+\documentclass[11pt]{article}
+
+\usepackage[
+top=0.5in,
+bottom=0.5in,
+left=0.5in,
+right=0.5in
+]{geometry}
+
+\usepackage{XCharter}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{titlesec}
+
+\raggedright
+\pagestyle{empty}
+
+\input{glyphtounicode}
+\pdfgentounicode=1
+
+\titleformat{\section}
+{\bfseries\large}
+{}
+{0pt}
+{}
+[\vspace{1pt}\titlerule\vspace{-6pt}]
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\small$\bullet$}}$}
+\setlist[itemize]{itemsep=-3pt,leftmargin=12pt,topsep=3pt}
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Header
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\centerline{\Huge [Name] [Last Name]}
+
+\vspace{4pt}
+
+\centerline{
+\href{mailto:email@example.com}{email@example.com}
+\;|\;
+City, Country
+\;|\;
+\href{https://linkedin.com/in/your-linkedin}{linkedin.com/in/your-linkedin}
+\;|\;
+\href{https://github.com/your-github}{github.com/your-github}
+}
+
+\vspace{-10pt}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Profile
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section*{Profile}
+
+Full-stack software engineer specializing in AI-powered data platforms and backend systems. Experienced building scalable data ingestion pipelines, cloud-native services, and production AI workflows on Google Cloud using Python, React, Django, FastAPI, and Vertex AI. Comfortable owning features end-to-end while collaborating closely with ML engineers and domain experts. Native Italian, fluent English (C1), working Dutch (A2).
+
+\vspace{-8pt}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Experience
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section*{Experience}
+
+\textbf{Full-Stack Developer} AI-driven procurement \& spend-intelligence
+\hfill
+Mar 2023 -- Sep 2024
+
+\vspace{-8pt}
+
+\begin{itemize}
+    \item Built production full-stack features using Django, Celery, React, TypeScript and Material UI on Google Cloud.
+    \item Designed and implemented a self-service data ingestion platform, replacing manual onboarding and maintenance with event-driven workflows.
+    \item Automated the Purchase Price Variance (PPV) lifecycle—from detection to resolution—reducing average resolution time from \textbf{48 hours to approximately 2 hours (95\% improvement)} through real-time streaming, ML-based classification, and automated workflows.
+    \item Developed data ingestion services (\textit{cat-ingestion}, \textit{cat-data}, \textit{cat-material}) powering procurement KPIs for enterprise customers.
+    \item Integrated Vertex AI models including zero-shot classification, BERT similarity grouping, and GPT-assisted product tagging.
+    \item Partnered with ML engineers to integrate production AI models and collaborated with procurement domain experts to translate complex business processes into scalable software.
+    \item Designed technical architecture for major platform initiatives, secured CTO approval, and coordinated implementation across engineering stakeholders.
+\end{itemize}
+
+\textbf{Full-Stack Developer Intern} AI-powered marketing intelligence platform
+\hfill
+Aug 2022 -- Jan 2023
+
+\vspace{-8pt}
+
+\begin{itemize}
+    \item Built a FastAPI configuration service serving as the single source of truth for account and pipeline configuration.
+    \item Containerized services with Docker and maintained Jenkins CI pipelines.
+    \item Improved deployment consistency by centralizing configuration management across internal services.
+\end{itemize}
+
+\textbf{Career Break}
+\hfill
+Oct 2024 -- Jul 2026
+
+\vspace{2pt}
+
+Planned career break for family and health reasons while continuing to develop software engineering skills through personal projects. Fully recovered and available for full-time software engineering roles.
+
+\vspace{-8pt}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Skills
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section*{Skills}
+
+\textbf{Languages:} Python, TypeScript, SQL (PostgreSQL, MySQL, BigQuery), Go, Java
+
+\textbf{Frontend:} React, Material UI, Tailwind CSS, D3.js, Apache ECharts, Firebase, Auth0
+
+\textbf{Backend:} Django, FastAPI, Celery, SQLAlchemy, REST APIs
+
+\textbf{Data \& AI:} Data Ingestion, ETL Pipelines, Vertex AI, HuggingFace Transformers, BERT, GPT, Streamlit
+
+\textbf{Cloud:} Google Cloud Platform (Cloud Run, BigQuery, Pub/Sub), Terraform, Docker, Jenkins
+
+\textbf{Tools:} Git, Figma, pytest, Cypress, AI coding agents
+
+\vspace{-8pt}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Languages
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section*{Languages}
+
+Italian (Native) \hfill English (C1) \hfill Dutch (A2)
+
+\vspace{-8pt}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Education
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section*{Education}
+
+\textbf{B.Sc. Computer Science} (in progress)\\
+University of Milan
+
+\vspace{-8pt}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Interests
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section*{Interests}
+
+Artificial Intelligence, Data Engineering, Finance, Formula 1, Photography, Cooking.
+
+
+
+\end{document}
