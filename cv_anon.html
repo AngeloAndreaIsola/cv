@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>CV — Anonymized</title>
+<style>
+  :root {
+    --ink: #1a1a1a;
+    --muted: #555;
+    --accent: #2b3a55;
+    --line: #d8dde6;
+  }
+  * { box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: var(--ink);
+    margin: 0;
+    padding: 40px;
+    line-height: 1.5;
+    font-size: 14px;
+  }
+  .page { max-width: 760px; margin: 0 auto; }
+
+  header { border-bottom: 2px solid var(--accent); padding-bottom: 16px; margin-bottom: 24px; }
+  h1 { font-size: 30px; margin: 0 0 4px; letter-spacing: -0.5px; }
+  .title { font-size: 16px; color: var(--accent); font-weight: 600; margin: 0 0 10px; }
+  .contact { font-size: 13px; color: var(--muted); display: flex; flex-wrap: wrap; gap: 6px 18px; }
+  .contact span::before { content: "·"; margin-right: 8px; color: var(--line); }
+  .contact span:first-child::before { content: ""; margin: 0; }
+
+  section { margin-bottom: 26px; }
+  h2 {
+    font-size: 13px; text-transform: uppercase; letter-spacing: 1.5px;
+    color: var(--accent); border-bottom: 1px solid var(--line);
+    padding-bottom: 5px; margin: 0 0 14px;
+  }
+
+  .job { margin-bottom: 18px; }
+  .job-head { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 4px; }
+  .job-title { font-weight: 700; font-size: 15px; }
+  .job-company { color: var(--accent); font-weight: 600; }
+  .job-dates { color: var(--muted); font-size: 13px; white-space: nowrap; }
+  ul { margin: 8px 0 0; padding-left: 18px; }
+  li { margin-bottom: 8px; }
+
+  .gap-note {
+    background: #f4f6fa; border-left: 3px solid var(--accent);
+    padding: 12px 16px; border-radius: 0 4px 4px 0;
+  }
+  .gap-note .job-title { color: var(--ink); }
+
+  .skills-grid { display: grid; grid-template-columns: 1fr; gap: 6px 24px; }
+  .skill-cat { font-weight: 600; }
+  .skill-cat span { font-weight: 400; color: var(--muted); }
+
+  .langs { display: flex; flex-wrap: wrap; gap: 8px 16px; }
+  .lang { background: #f4f6fa; padding: 4px 12px; border-radius: 14px; }
+
+  .ph { background: #fff4cc; border: 1px dashed #e0c878; border-radius: 4px; padding: 0 4px; }
+
+  @media print {
+    body { padding: 0; }
+    .ph { background: transparent; border: none; padding: 0; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <header>
+    <h1>Angelo Andrea Isola</h1>
+    <p class="title">Full-Stack Developer for Data Platforms</p>
+    <div class="contact">
+      <span><span class="ph">email@example.com</span></span>
+      <span><span class="ph">+00 000 000 0000</span></span>
+      <span><span class="ph">City, Country</span></span>
+      <span><span class="ph">linkedin.com/in/you</span></span>
+      <span><span class="ph">github.com/your-handle</span></span>
+    </div>
+  </header>
+
+  <section>
+    <h2>Profile</h2>
+    <p>
+      Full-stack developer specialized in <strong>AI and data platforms</strong>. At COMPANY #1 I helped build an
+      <strong>AI-driven procurement &amp; spend-intelligence platform</strong> on GCP — working across the
+      Django/Celery backend, a React/TypeScript analytics dashboard, data ingestion &amp; materialization, and
+      Vertex AI ML pipelines (zero-shot, BERT, GPT). At COMPANY #2 I built <strong>dash-cass</strong>, a FastAPI
+      configuration service used as the single source of truth for account and pipeline configs. I own features
+      end-to-end, from data pipelines to UI, and I build daily with <strong>AI coding agents</strong>. Bilingual
+      (Italian/English), working Dutch. Returning to the workforce after a planned career break — fully available.
+    </p>
+  </section>
+
+  <section>
+    <h2>Experience</h2>
+
+    <div class="job">
+      <div class="job-head">
+        <div>
+          <span class="job-title">Full-Stack Developer</span> —
+          <span class="job-company">COMPANY #1 (AI-driven procurement &amp; spend-intelligence platform)</span>
+        </div>
+        <div class="job-dates">Mar 2023 – Sep 2024</div>
+      </div>
+      <ul>
+        <li>Built and shipped full-stack features across an AI-driven procurement &amp; spend-intelligence product on GCP, working end-to-end from the Django + Celery backend through to the React/TypeScript dashboard.</li>
+        <li>Developed the data layer — ingestion handling multiple Excel files with billions of rows, Excel parsing, taxonomy mapping and materialization — powering KPIs such as purchase-price variance and supplier synergy for enterprise customers.</li>
+        <li>Integrated ML into the product: contributed to Vertex AI pipelines for zero-shot part classification (HuggingFace / sentence-transformers), BERT-based part grouping, and GPT-assisted tagging, wired into backend categorization services.</li>
+        <li>Built interactive analytics UI in React with d3 (sankey/hierarchy) and ECharts, with Auth0/Google OAuth and Firebase, and supported reliability via Terraform, Cloud Run, Celery workers, BigQuery and Pub/Sub.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-head">
+        <div>
+          <span class="job-title">Full-Stack Developer</span> —
+          <span class="job-company">COMPANY #2 (AI-powered marketing-intelligence platform)</span>
+        </div>
+        <div class="job-dates">Aug 2022 – Jan 2023</div>
+      </div>
+      <ul>
+        <li>Contributed to COMPANY #2, an AI-powered marketing-intelligence platform, building <strong>dash-cass</strong> — a FastAPI configuration &amp; scoping service that became the single source of truth for account and pipeline configurations, with versioned changes and API-side validation.</li>
+        <li>Implemented JWT auth (python-jose), PostgreSQL persistence (SQLAlchemy), containerized the service with Docker, and shipped it via Jenkins CI with pytest.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="gap-note">
+        <div class="job-head">
+          <div><span class="job-title">Career Break</span></div>
+          <div class="job-dates">Oct 2024 – Jul 2026</div>
+        </div>
+        <p style="margin:6px 0 0;">
+          Took a planned break to focus on personal health and family care. Maintained and deepened my
+          engineering skills (full-stack practice, GCP/Vertex AI, AI coding agents) and am now fully
+          recovered and available to return to work.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <div><span class="skill-cat">Languages:</span> <span>Python · TypeScript · SQL (PostgreSQL, MySQL, BigQuery) · Go · Java</span></div>
+      <div><span class="skill-cat">Frontend:</span> <span>React 17 · MUI · MobX · d3 · ECharts · Tailwind · Firebase · Auth0</span></div>
+      <div><span class="skill-cat">Backend / APIs:</span> <span>Django · FastAPI · Celery · SQLAlchemy · REST</span></div>
+      <div><span class="skill-cat">Data &amp; AI:</span> <span>Data ingestion / ETL · taxonomy &amp; categorization · Vertex AI pipelines · HuggingFace / sentence-transformers · BERT · OpenAI / GPT · Streamlit</span></div>
+      <div><span class="skill-cat">Cloud &amp; DevOps:</span> <span>GCP (Cloud Run, GKE, Vertex AI, BigQuery, Pub/Sub) · Terraform · Docker · Jenkins · Cloud Build</span></div>
+      <div><span class="skill-cat">Design &amp; Tooling:</span> <span>Figma · AI coding agents (Cursor / Copilot / Claude Code) · pytest · Cypress</span></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Interests</h2>
+    <p>AI &amp; machine learning, software and game development, Formula 1, photography, cooking, gaming, and PC/tech gadgets.</p>
+  </section>
+
+  <section>
+    <h2>Languages</h2>
+    <div class="langs">
+      <span class="lang">Italian — Native</span>
+      <span class="lang">English — C1</span>
+      <span class="lang">Dutch — A2</span>
+    </div>
+  </section>
+
+</div>
+</body>
+</html>
